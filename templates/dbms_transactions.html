@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Transactions</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="notes-card">
+
+<h1>🔄 Transactions</h1>
+
+<p>
+A transaction is a sequence of database operations performed as a single unit.
+</p>
+
+<h2>ACID Properties</h2>
+
+<ul>
+
+<li>Atomicity</li>
+
+<li>Consistency</li>
+
+<li>Isolation</li>
+
+<li>Durability</li>
+
+</ul>
+
+<h2>Example</h2>
+
+<pre>
+Transfer ₹500
+
+Account A → -500
+
+Account B → +500
+</pre>
+
+<p>
+If one operation fails, the whole transaction is rolled back.
+</p>
+
+<a href="/dbms" class="btn">⬅ Back</a>
+
+</div>
+
+</body>
+</html>

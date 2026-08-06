@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Notes</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>🐍 Python Notes</h1>
+
+<p class="page-subtitle">
+    Learn Python from Basics to Advanced
+</p>
+
+<input
+    type="text"
+    id="searchInput"
+    class="search-box"
+    placeholder="🔍 Search Chapter..."
+    onkeyup="searchChapters()">
+
+<div class="progress">
+    <h3>Course Progress</h3>
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+    <p>60% Completed</p>
+</div>
+
+<div class="chapter-list">
+    <div class="chapter-card">
+    <h3>1.📘 Introduction to Python</h3>
+    <a href="/python/introduction" class="btn">Read Notes</a>
+</div>
+
+    <div class="chapter-card">
+        <div>
+            <h3>2. 📦 Variables</h3>
+            <p>Store data using variables.</p>
+        </div>
+        <a href="/python/variables" class="btn">Read Notes</a>
+        
+    </div>
+
+    <div class="chapter-card">
+        <div>
+            <h3>3. 🔢 Data Types</h3>
+            <p>int, float, string, bool.</p>
+        </div>
+        <a href="/python/datatypes" class="btn">Read Notes</a>
+    </div>
+
+    <div class="chapter-card">
+        <div>
+            <h3>4. ➕ Operators</h3>
+            <p>Arithmetic and logical operators.</p>
+        </div>
+        <a href="/python/operators" class="btn">Read Notes</a>
+    </div>
+
+    <div class="chapter-card">
+        <div>
+            <h3>5. 🔀 If Else</h3>
+            <p>Decision making statements.</p>
+        </div>
+        <a href="/python/ifelse" class="btn">Read Notes</a>
+    </div>
+
+    <div class="chapter-card">
+        <div>
+            <h3>6. 🔁 Loops</h3>
+            <p>For loop and While loop.</p>
+        </div>
+        <a href="/python/loops" class="btn">Read Notes</a>
+    </div>
+
+</div>
+
+<br>
+
+<a href="/" class="hero-btn">🏠 Back to Home</a>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

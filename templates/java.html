@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Notes</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<div class="card">
+
+    <h1>☕ Java Notes</h1>
+
+    <p class="page-subtitle">
+        Learn Java from Basics to Advanced
+    </p>
+
+    <input type="text"
+           placeholder="🔍 Search Chapter..."
+           class="search-box">
+
+    <div class="progress">
+
+        <h3>Course Progress</h3>
+
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
+        <p>60% Completed</p>
+
+    </div>
+
+    <div class="chapter-list">
+
+        <div class="chapter-card">
+            <h3>📘 Introduction to Java</h3>
+            <a href="/java/introduction" class="btn">Read Notes</a>
+        </div>
+
+        <div class="chapter-card">
+            <h3>📝 Variables</h3>
+            <a href="/java/variables" class="btn">Read Notes</a>
+        </div>
+
+        <div class="chapter-card">
+            <h3>🔢 Data Types</h3>
+            <a href="/java/datatypes" class="btn">Read Notes</a>
+        </div>
+
+        <div class="chapter-card">
+            <h3>➕ Operators</h3>
+            <a href="/java/operators" class="btn">Read Notes</a>
+        </div>
+
+        <div class="chapter-card">
+            <h3>🔀 If Else</h3>
+            <a href="/java/ifelse" class="btn">Read Notes</a>
+        </div>
+
+        <div class="chapter-card">
+            <h3>🔁 Loops</h3>
+            <a href="/java/loops" class="btn">Read Notes</a>
+        </div>
+
+    </div>
+
+    <a href="/" class="btn">🏠 Back to Home</a>
+
+</div>
+
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

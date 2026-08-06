@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="books-container">
+
+    <h1>📚 Choose Your Subject</h1>
+    <p>Select a subject to start learning.</p>
+
+    <div class="books-grid">
+
+        <div class="book-card">
+            <h2>🐍 Python</h2>
+            <a href="/python" class="book-btn">Open</a>
+        </div>
+
+        <div class="book-card">
+            <h2>☕ Java</h2>
+            <a href="/java" class="book-btn">Open</a>
+        </div>
+
+        <div class="book-card">
+            <h2>🗄️ DBMS</h2>
+            <a href="/dbms" class="book-btn">Open</a>
+        </div>
+
+        <div class="book-card">
+            <h2>💻 JavaScript</h2>
+            <a href="/javascript" class="book-btn">Open</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

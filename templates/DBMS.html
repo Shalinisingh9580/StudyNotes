@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DBMS Notes</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🗄️ DBMS Notes</h1>
+
+        <p class="page-subtitle">
+            Learn Database Management System from Basics to Advanced
+        </p>
+
+        <input type="text"
+               placeholder="🔍 Search Chapter..."
+               class="search-box">
+
+        <div class="progress">
+
+            <h3>Course Progress</h3>
+
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+
+            <p>60% Completed</p>
+
+        </div>
+
+        <div class="chapter-list">
+
+            <div class="chapter-card">
+                <h3>📘 Introduction to DBMS</h3>
+                <a href="/dbms/introduction" class="btn">Read Notes</a>
+            </div>
+
+            <div class="chapter-card">
+                <h3>🗂️ DBMS Architecture</h3>
+                <a href="/dbms/architecture" class="btn">Read Notes</a>
+            </div>
+
+            <div class="chapter-card">
+                <h3>🔑 Keys</h3>
+                <a href="/dbms/keys" class="btn">Read Notes</a>
+            </div>
+
+            <div class="chapter-card">
+                <h3>💻 SQL Basics</h3>
+                <a href="/dbms/sql" class="btn">Read Notes</a>
+            </div>
+
+            <div class="chapter-card">
+                <h3>📊 Normalization</h3>
+                <a href="/dbms/normalization" class="btn">Read Notes</a>
+            </div>
+
+            <div class="chapter-card">
+                <h3>🔄 Transactions</h3>
+                <a href="/dbms/transactions" class="btn">Read Notes</a>
+            </div>
+
+        </div>
+
+        <a href="/" class="btn">🏠 Back to Home</a>
+
+    </div>
+
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
